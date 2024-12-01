@@ -16,8 +16,8 @@ R = sorted(R)
 
 sum = 0
 
-for idx, i in enumerate(L):
-    distance = abs(i - R[idx])
-    sum+=distance
+for i in L:
+    similarity = R.count(i) * i
+    sum += similarity
 
 print(sum)
